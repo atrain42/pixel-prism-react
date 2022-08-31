@@ -11,7 +11,7 @@ const Home = (props) => {
     <React.Fragment>
       <Header />
       <section className="home-section">
-        <h1 className="white-title">Business enhancement</h1>
+        <h1 className="white-title">Enhancement</h1>
         <p className="white-text">
           Here are just a few of the ways that websites can enhance your
           business.

@@ -9,7 +9,7 @@ import product from "../../img/product.png";
 const data = [
   {
     title: "SEO",
-    info: "Let's get more traffic to your website through better SEO techniques.",
+    info: "Good SEO means that Google will recommend your business when people search related content.",
     icon: agile,
   },
   {
