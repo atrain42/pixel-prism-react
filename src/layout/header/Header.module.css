@@ -53,6 +53,7 @@ hr {
 @media (max-width: 525px) {
   .headerText {
     font-size: 65%;
+    top: 40%;
   }
 }
 
