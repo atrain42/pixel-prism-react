@@ -27,12 +27,11 @@ const SingleAlert = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className={classes.alertBin}>
+    <div className={classes.alertBin} ref={ref}>
       {data.map((el, index) => (
         <div
           className={classes.alert}
           key={index}
-          ref={ref}
           style={{
             opacity: isInView ? 1 : 0,
             transition: "all 1s ease-in",
