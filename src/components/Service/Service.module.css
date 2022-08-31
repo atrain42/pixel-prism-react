@@ -5,7 +5,6 @@
   justify-content: center;
   /* gap: 20px 0px; */
   overflow: hidden;
-  padding-top: 100px;
 }
 
 .serviceTitle {
@@ -44,6 +43,7 @@
 @media (max-width: 775px) {
   .service {
     grid-template-columns: repeat(1, minmax(140px, 550px));
+    padding: 50px 0;
   }
 
   .singleService {

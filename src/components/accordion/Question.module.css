@@ -59,8 +59,8 @@ main {
 .btn {
   background: transparent;
   border-color: transparent;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   background: var(--clr-grey-special);
   display: flex;
   align-items: center;
@@ -71,6 +71,7 @@ main {
   margin-left: 1rem;
   align-self: center;
   min-width: 2rem;
+  font-size: 20px;
 }
 
 @keyframes appear {

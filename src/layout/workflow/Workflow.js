@@ -6,7 +6,7 @@ const Workflow = () => {
       <div className="title-content">
         <h1 className="section-title">Design Process</h1>
         <p className="section-text">
-          Take a look at how I make your website become a reality
+          Take a look at the steps I follow to build your dream site
         </p>
       </div>
       <Design />

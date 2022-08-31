@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 775px) {
+  .alertBin {
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 550px) {
   .alertBin {
     padding: 100px 25px;

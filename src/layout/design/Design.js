@@ -26,21 +26,26 @@ const Design = () => {
           icon={sub1}
           title="Research"
           content="Let's start by researching competitors and see how they have their website structured."
+          num="01"
         />
         <IconText
           icon={sub2}
           title="Design"
           content="Here is where I start creating user interface of your site and making sure it is accessible and eye-catching to users."
+          num="02"
         />
         <IconText
           icon={sub3}
           title="Develop"
           content="Next, I optimize your website for speed and performance. I will test to make sure all sections of your site are functional."
+          num="03"
         />
         <IconText
           icon={sub4}
           title="Deploy"
           content="Next I deploy your website to the internet. I will then test it to make sure there are no issues that erupt."
+          num="04"
+          id="last"
         />
       </div>
       <img
