@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 
+// git push new origin
+
 function App() {
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
