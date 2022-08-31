@@ -1,23 +1,18 @@
+import React from "react";
 import Header from "../layout/header/Header";
 import Service from "../components/Service/Service";
 import SingleAlert from "../components/alert/SingleAlert";
 import Workflow from "../layout/workflow/Workflow";
-import Design from "../layout/design/Design";
+import Questions from "../components/accordion/Questions";
 import Footer from "../layout/footer/Footer";
-
-import { motion } from "framer-motion";
 
 const Home = (props) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <React.Fragment>
       <Header />
       <section className="home-section">
-        <h1 className="section-title">Business enhancement</h1>
-        <p>
+        <h1 className="white-title">Business enhancement</h1>
+        <p className="white-text">
           Here are just a few of the ways that websites can enhance your
           business.
         </p>
@@ -30,15 +25,17 @@ const Home = (props) => {
           ></path>
         </svg>
       </section>
-      <SingleAlert />
+      <section className="alert-section">
+        <h1 className="white-title">Creating your site</h1>
+        <p className="white-text">
+          It is important that your site has a memorable UI and is fast.
+        </p>
+        <SingleAlert />
+      </section>
       <Workflow />
-      <h1 className="section-title">Design Process</h1>
-      <p className="section-text">
-        Take a look at how I make your website become a reality
-      </p>
-      <Design />
+      <Questions />
       <Footer />
-    </motion.div>
+    </React.Fragment>
   );
 };
 

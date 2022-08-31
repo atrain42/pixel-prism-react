@@ -1,13 +1,14 @@
 .header {
   position: relative;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(../../img/test.png);
+    url(../../img/test.webp);
   background-position: center;
   background-size: cover;
 }
@@ -28,10 +29,12 @@
 .headerText h1 {
   font-size: 3.5em;
   position: relative;
+  white-space: nowrap;
 }
 
 .headerText h2 {
   font-size: 2.5em;
+  white-space: nowrap;
 }
 
 hr {
@@ -44,5 +47,23 @@ hr {
 @media (max-width: 1000px) {
   .headerText {
     font-size: 75%;
+  }
+}
+
+@media (max-width: 525px) {
+  .headerText {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 425px) {
+  .headerText {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 365px) {
+  .headerText {
+    font-size: 50%;
   }
 }

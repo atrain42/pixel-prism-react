@@ -50,6 +50,16 @@
   position: relative;
 }
 
+.email {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lora", sans-serif;
+  font-size: 12.5px;
+  letter-spacing: 1.2px;
+}
+
 @media (max-width: 575px) {
   .footer {
     padding-left: 25px;

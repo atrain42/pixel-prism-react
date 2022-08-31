@@ -5,6 +5,7 @@
   /* background-color: var(--green); */
   position: relative;
   z-index: 1;
+  padding-bottom: 200px;
 }
 
 .alertBin svg {

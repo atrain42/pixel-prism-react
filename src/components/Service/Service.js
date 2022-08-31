@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import classes from "./Service.module.css";
 import agile from "../../img/agile.png";
 import app from "../../img/app.png";
@@ -28,10 +30,21 @@ const data = [
 ];
 
 const Service = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className={classes.service}>
       {data.map((el, index) => (
-        <div className={classes.singleService} key={index}>
+        <div
+          className={classes.singleService}
+          key={index}
+          ref={ref}
+          style={{
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s ease-in",
+          }}
+        >
           <div className={classes.serviceTitle}>
             <img src={el.icon} alt={el.title} className={classes.icon}></img>
             <h1>{el.title}</h1>

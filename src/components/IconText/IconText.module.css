@@ -1,6 +1,7 @@
 .iconText {
   display: flex;
   flex-direction: column;
+  z-index: 60;
 }
 
 .iconText p {
@@ -15,7 +16,7 @@
 
 .textBin h1 {
   font-family: "Lora", sans-serif;
-  font-size: 22.5px;
+  font-size: 25px;
 }
 
 .iconText img {

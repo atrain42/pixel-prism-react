@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import IconText from "../../components/IconText/IconText";
 import design from "../../img/design.svg";
 import classes from "./Design.module.css";
@@ -8,9 +10,18 @@ import sub3 from "../../img/sub3.png";
 import sub4 from "../../img/sub4.png";
 
 const Design = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section className={classes.designSection}>
-      <div className={classes.iconContainer}>
+    <section className={classes.designSection} ref={ref}>
+      <div
+        className={classes.iconContainer}
+        style={{
+          opacity: isInView ? 1 : 0,
+          transition: "all 1s ease-in",
+        }}
+      >
         <IconText
           icon={sub1}
           title="Research"
@@ -32,7 +43,16 @@ const Design = () => {
           content="Next I deploy your website to the internet. I will then test it to make sure there are no issues that erupt."
         />
       </div>
-      <img src={design} alt="design" className={classes.mainImg} />
+      <img
+        src={design}
+        alt="design"
+        className={classes.mainImg}
+        style={{
+          transform: isInView ? "none" : "scale(1.1)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1s ease-in",
+        }}
+      />
     </section>
   );
 };

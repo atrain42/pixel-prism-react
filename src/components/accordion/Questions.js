@@ -1,50 +1,53 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import SingleQuestion from "./SingleQuestion";
-import { useState } from "react";
 import classes from "./Question.module.css";
 
 const questions = [
   {
     id: 1,
-    title: "Step 1",
-    info: "paragraph 1 text",
+    title: "How much do you charge for websites?",
+    info: "I have very flexible pricing that is dependent upon the difficulty of the project. I want everyone to have a website, so I am very flexible with my pricing and am willing to negotiate with you.",
   },
   {
     id: 2,
-    title: "Step 2",
-    info: "paragraph 2 text",
+    title: "How long does it take to build my site?",
+    info: "I ask you to give me around 1 - 2 weeks to complete your website. For bigger projects that may require interaction with a database, I ask that you give me at least a month.",
   },
   {
     id: 3,
-    title: "Step 3",
-    info: "paragraph 3 text",
+    title: "How do I pick the name of my website?",
+    info: "I recommend searching for domain names at namecheap.com. Here you can see which domains are available and how much they cost (typically a domain costs around $20/year).",
   },
   {
     id: 4,
-    title: "Step 4",
-    info: "paragraph 4 text",
+    title: "How do I pay for my website?",
+    info: "I accept payments via PayPal, Venmo, Cashapp, and Applepay. I require a deposit of $150 before I begin creating your website.",
   },
 ];
 
 const Questions = () => {
-  // const initial = questions[0].info;
-  const [selectedId, setSelectedId] = useState(1);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <main>
-      <div className={classes.container}>
+    <main ref={ref}>
+      <h1 className="white-title">Q & A</h1>
+      <p className="white-text">
+        Here's some answers to popular questions that I receive
+      </p>
+      <div
+        className={classes.container}
+        style={{
+          opacity: isInView ? 1 : 0,
+          transition: "all 1s ease-in",
+        }}
+      >
         {questions.map((question) => {
-          return (
-            <SingleQuestion
-              key={question.id}
-              isSelected={question.id === selectedId}
-              setSelectedId={setSelectedId}
-              {...question}
-            />
-          );
+          return <SingleQuestion key={question.id} {...question} />;
         })}
       </div>
     </main>
   );
 };
-
 export default Questions;
