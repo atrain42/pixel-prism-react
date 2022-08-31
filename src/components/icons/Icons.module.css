@@ -1,0 +1,18 @@
+.iconBin {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(70px, 200px));
+  gap: 40px 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: relative;
+  justify-content: center;
+}
+
+.singleIcon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}

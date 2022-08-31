@@ -1,13 +1,122 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --green: #41b3a3;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+  z-index: 42;
+}
+
+.section-title {
+  padding-top: 50px;
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding-bottom: 10px;
+}
+
+.section-title:nth-child(1) {
+  background-color: #fff;
+}
+
+.section-text {
+  font-size: 19px;
+  font-family: "Lora", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-section {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", sans-serif;
+  /* background-color: #5cdb95; */
+  position: relative;
+}
+
+.home-section p {
+  /* font-size: 19px;
+  font-family: "Lora", sans-serif;
+  margin: 0 auto;
+  text-align: center; */
+  z-index: 3;
+}
+
+.home-section svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.workflow {
+  padding: 100px 0;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.workflow svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#icon {
+  font-size: 50px;
+}
+
+.singleIcon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 3px rgba(140, 140, 140, 0.15);
+  border-radius: 50%;
+  z-index: 50;
+}
+
+.ghost {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 900px) {
+  .singleIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ghost {
+    width: 70px;
+    height: 70px;
+  }
 }

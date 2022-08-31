@@ -1,0 +1,42 @@
+.iconText {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconText p {
+  width: 400px;
+}
+
+.textBin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.textBin h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 22.5px;
+}
+
+.iconText img {
+  height: 27.5px;
+  width: 27.5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1025px) {
+  .iconText p {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .iconText p {
+    width: 100%;
+  }
+
+  .iconText {
+    margin-bottom: 40px;
+    margin-right: 0px;
+  }
+}
