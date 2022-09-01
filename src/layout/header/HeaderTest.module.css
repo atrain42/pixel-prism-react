@@ -47,6 +47,7 @@
 .testContent h1 {
   font-size: 2.75em;
   white-space: nowrap;
+  position: relative;
 }
 
 .testContent h2 {

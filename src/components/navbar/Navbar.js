@@ -15,7 +15,7 @@ const Navbar = () => {
       style={{
         transform: isInView ? "none" : "translateY(-20px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s linear 1.25s",
+        transition: "all 0.9s linear 0.5s",
       }}
     >
       <div className={classes.navOverhang}>
