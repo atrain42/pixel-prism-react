@@ -33,9 +33,6 @@ const Questions = () => {
   return (
     <main ref={ref}>
       <h1 className="white-title">Q & A</h1>
-      <p className="white-text">
-        Here's some answers to popular questions that I receive
-      </p>
       <div
         className={classes.container}
         style={{

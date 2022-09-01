@@ -83,14 +83,6 @@ body {
   z-index: 3;
 }
 
-.home-section svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 35;
-  min-width: 100vw;
-}
-
 .workflow {
   padding: 100px 0;
   position: relative;
@@ -141,6 +133,12 @@ body {
   }
 }
 
+@media (max-width: 850px) {
+  .workflow {
+    padding: 100px 100px;
+  }
+}
+
 @media (max-width: 700px) {
   .home-section {
     padding-left: 15px;
@@ -151,10 +149,11 @@ body {
     padding-left: 25px;
     padding-right: 25px;
   }
+}
 
+@media (max-width: 650px) {
   .workflow {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 100px 50px;
   }
 }
 
