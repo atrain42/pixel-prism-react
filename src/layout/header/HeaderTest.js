@@ -14,7 +14,7 @@ const HeaderTest = () => {
           experience.
         </p>
       </div>
-      <img src={logo} />
+      <img src={logo} alt="prism" />
       <button>see more &#x25BC;</button>
     </header>
   );

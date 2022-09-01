@@ -81,9 +81,6 @@
 
 @media (max-width: 975px) {
   .headerTest {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(to right, #fff 0%, #fff 100%);
   }
 
@@ -92,8 +89,16 @@
     left: 12.5%;
   }
 
+  .testContent p {
+    margin-bottom: 100px;
+  }
+
   .headerTest img {
-    display: none;
+    position: relative;
+    display: block;
+    top: 0%;
+    right: 0%;
+    margin: 0 auto;
   }
 }
 
@@ -127,37 +132,41 @@
 }
 
 @media (max-width: 650px) {
+  .headerTest {
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .testContent {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+
   .testContent p {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 525px) {
-  .testContent {
-    top: 25%;
-    left: 10%;
-  }
-
-  .testContent h1 {
-    font-size: 2em;
-  }
-
-  .testContent h2 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 400px) {
-  .testContent {
-    top: 25%;
-    left: 7.5%;
-    padding: 25px 25px;
+    width: 100%;
   }
 
   .testContent::before {
-    top: 0;
-    width: 50%;
-    height: 50%;
-    left: 60%;
+    display: none;
+  }
+
+  .testContent::after {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .headerTest {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerTest {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
