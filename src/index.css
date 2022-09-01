@@ -143,8 +143,8 @@ body {
 
 @media (max-width: 700px) {
   .home-section {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .alert-section {
