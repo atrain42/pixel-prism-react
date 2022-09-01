@@ -1,0 +1,148 @@
+.headerTest {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 60%,
+    #d0d0d0 60%,
+    #d0d0d0 100%
+  );
+}
+
+.testContent {
+  position: absolute;
+  top: 35%;
+  left: 7.5%;
+  font-family: "Lora", sans-serif;
+  font-size: 100%;
+  padding: 50px 50px;
+}
+
+.testContent::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 70%;
+  left: 60%;
+  border-top: 1px solid #a1a1a1;
+  border-right: 1px solid #a1a1a1;
+}
+
+.testContent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 70%;
+  width: 20%;
+  height: 30%;
+  left: 0%;
+  border-left: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.testContent h1 {
+  font-size: 2.75em;
+  white-space: nowrap;
+}
+
+.testContent h2 {
+  font-size: 2.75em;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.testContent p {
+  width: 450px;
+  font-family: "Inter", sans-serif;
+}
+
+.headerTest button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #404040;
+  cursor: pointer;
+}
+
+.headerTest img {
+  position: absolute;
+  top: 50%;
+  right: 17.5%;
+  height: 70px;
+  width: 70px;
+}
+
+@media (max-width: 975px) {
+  .headerTest {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+  }
+
+  .testContent {
+    top: 25%;
+    left: 12.5%;
+  }
+
+  .headerTest img {
+    display: none;
+  }
+}
+
+@media (max-width: 775px) {
+  .testContent::before {
+    margin-right: 100px;
+  }
+
+  .testContent {
+    font-size: 80%;
+    padding: 25px 25px;
+  }
+
+  .testContent p {
+    width: 400px;
+  }
+
+  .testContent::before {
+    top: 0;
+    width: 50%;
+    height: 70%;
+    left: 60%;
+  }
+
+  .testContent::after {
+    top: 70%;
+    width: 20%;
+    height: 30%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 650px) {
+  .testContent p {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 525px) {
+  .testContent {
+    top: 25%;
+    left: 10%;
+  }
+
+  .testContent h1 {
+    font-size: 2em;
+  }
+
+  .testContent h2 {
+    font-size: 2em;
+  }
+}

@@ -75,7 +75,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Lora", sans-serif;
-  /* background-color: #5cdb95; */
+  /* background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.553), #fff); */
   position: relative;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../layout/header/Header";
+import HeaderTest from "../layout/header/HeaderTest";
 import Service from "../components/Service/Service";
 import SingleAlert from "../components/alert/SingleAlert";
 import Workflow from "../layout/workflow/Workflow";
@@ -9,7 +9,7 @@ import Footer from "../layout/footer/Footer";
 const Home = (props) => {
   return (
     <React.Fragment>
-      <Header />
+      <HeaderTest />
       <section className="home-section">
         <h1 className="white-title">Enhancement</h1>
         <p className="white-text">
