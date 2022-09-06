@@ -21,7 +21,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          01. About
+          About
         </Link>
       </motion.li>
       <motion.li
@@ -37,7 +37,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          02. Process
+          Process
         </Link>
       </motion.li>
       <motion.li
@@ -53,7 +53,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          03. Questions
+          Questions
         </Link>
       </motion.li>
       <motion.li
@@ -69,7 +69,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          04. Contact
+          Contact
         </Link>
       </motion.li>
     </ul>

@@ -59,3 +59,14 @@
     border-bottom: none;
   }
 }
+
+@media (max-width: 550px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .singleService {
+    padding: 50px 0px;
+  }
+}

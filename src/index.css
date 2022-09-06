@@ -70,7 +70,7 @@ body {
 }
 
 .workflow {
-  padding: 100px 0;
+  padding: 100px 25px;
   position: relative;
   background-color: #f5f5f5;
 }
@@ -119,12 +119,6 @@ body {
   }
 }
 
-/* @media (max-width: 850px) {
-  .workflow {
-    padding: 100px 100px;
-  }
-} */
-
 @media (max-width: 700px) {
   .home-section {
     padding-left: 15px;
@@ -136,12 +130,6 @@ body {
     padding-right: 25px;
   }
 }
-
-/* @media (max-width: 650px) {
-  .workflow {
-    padding: 100px 50px;
-  }
-} */
 
 @media (max-width: 550px) {
   .singleIcon {
