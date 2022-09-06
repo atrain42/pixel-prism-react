@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import classes from "./Navbar.module.css";
+import Navigation from "./Navigation";
+import MobileNavigation from "./MobileNavigation";
 
 import logo from "../../img/logo.png";
 
@@ -15,15 +17,15 @@ const Navbar = () => {
       style={{
         transform: isInView ? "none" : "translateY(-20px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s linear 0.5s",
+        transition: "all 0.75s linear",
       }}
     >
       <div className={classes.navOverhang}>
         <div className={classes.homeButton}>
           <img src={logo} alt="logo" id="logo"></img>
         </div>
-        {/* <Navigation />
-        <MobileNavigation /> */}
+        <Navigation />
+        <MobileNavigation />
       </div>
     </div>
   );

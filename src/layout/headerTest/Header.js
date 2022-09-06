@@ -1,39 +1,38 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { Link } from "react-scroll";
+import classes from "./Header.module.css";
+import Image from "../../img/t1.svg";
 
-import classes from "./HeaderTest.module.css";
-import logo from "../../img/prism.png";
-
-const HeaderTest = () => {
+const Header = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   return (
-    <header className={classes.headerTest} ref={ref}>
-      <div className={classes.testContent}>
+    <section className={classes.header} ref={ref}>
+      <div className={classes.headerText}>
         <h1
           style={{
             transform: isInView ? "none" : "translateY(40px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s linear 0.1",
+            transition: "all 0.5s linear 1s",
           }}
         >
           Pixel Prism
         </h1>
-        <h2
+        <h1
           style={{
             transform: isInView ? "none" : "translateY(40px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+            transition: "all 0.5s linear 1.5s",
           }}
         >
           Web Development
-        </h2>
+        </h1>
         <p
           style={{
             transform: isInView ? "none" : "translateY(40px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.5s linear 2s",
           }}
         >
           Together, we will construct the perfect user interface that leaves a
@@ -43,17 +42,21 @@ const HeaderTest = () => {
         </p>
       </div>
       <img
-        src={logo}
-        alt="prism"
+        src={Image}
+        alt=""
+        className={classes.headerSvg}
         style={{
-          transform: isInView ? "none" : "scale(1.5)",
+          transform: isInView ? "none" : "scale(1.25)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.75s",
+          transition: "all 0.5s ease-in 2.5s",
         }}
       />
-      <button>see more &#x25BC;</button>
-    </header>
+
+      <Link to="about" spy={true} smooth={true} offset={0} duration={500}>
+        <button className={classes.seeMore}>see more &#x25BC;</button>
+      </Link>
+    </section>
   );
 };
 
-export default HeaderTest;
+export default Header;

@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTest from "../layout/header/HeaderTest";
+import Header from "../layout/headerTest/Header";
 import Service from "../components/Service/Service";
 import SingleAlert from "../components/alert/SingleAlert";
 import Workflow from "../layout/workflow/Workflow";
@@ -9,8 +9,8 @@ import Footer from "../layout/footer/Footer";
 const Home = (props) => {
   return (
     <React.Fragment>
-      <HeaderTest />
-      <section className="home-section">
+      <Header />
+      <section className="home-section" id="about">
         <h1 className="white-title">Enhancement</h1>
         <p className="white-text">
           Here are just a few of the ways that websites can enhance your

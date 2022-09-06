@@ -31,7 +31,7 @@ const Questions = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <main ref={ref}>
+    <main ref={ref} id="questions">
       <h1 className="white-title">Q & A</h1>
       <div
         className={classes.container}

@@ -7,7 +7,7 @@ const Footer = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className={classes.footer}>
+    <section className={classes.footer} id="contact">
       <div className={classes.footerText} ref={ref}>
         <h2
           style={{

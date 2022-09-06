@@ -11,14 +11,14 @@ const data = [
     title: "User Experience",
     icon: ui,
     script:
-      "I will create a unique user experience that leaves a lasting impression on your potential clients. Through the utilizaiton of white space and subtle animations, together we can take your business to the next level.",
+      "I will create a unique user experience that leaves a lasting impression on your potential clients. Through the utilizaiton of white space and subtle animations, together we can an eye-catching site. I will create a site that is simple and easy to navigate, without forfeiting any design features in the process.",
   },
   {
     subtitle: "EFFICIENT",
     title: "Performance",
     icon: performance,
     script:
-      "In order to have a good user experience, it is important that your website is usable and performant. Together, we will build a website that has a fast load time and is usable on all device types.",
+      "In order to have a good user experience, it is important that your website is usable and performant. Together, we will build a website that has a fast load time and is usable on all device types. Emphasis will be put on improving website speed, as that is an important aspect to having a good user interface.",
   },
 ];
 

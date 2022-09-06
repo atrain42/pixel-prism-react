@@ -1,0 +1,90 @@
+.phase {
+  padding: 100px 2.5rem;
+}
+
+.phaseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  gap: 100px;
+}
+
+.phaseContainer:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+.phaseContainer img {
+  height: 300px;
+  width: 300px;
+}
+
+.phaseInfo {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.phaseInfo a {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: #41b3a3;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.phaseInfo h1 {
+  font-size: 38px;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--text-black);
+}
+
+.phaseInfo p {
+  color: #626262;
+  font-size: 19px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1125px) {
+  .phaseInfo p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .phaseInfo h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .phaseInfo h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .phaseInfo {
+    width: 100%;
+  }
+  .phaseInfo h1 {
+    font-size: 25px;
+  }
+  .phaseContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phaseContainer img {
+    height: 225px;
+    width: 225px;
+  }
+}

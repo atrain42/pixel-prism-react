@@ -21,7 +21,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          About
+          01. About
         </Link>
       </motion.li>
       <motion.li
@@ -30,14 +30,14 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
       >
         <Link
-          to="projects"
+          to="process"
           spy={true}
           smooth={true}
-          offset={50}
+          offset={0}
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          Projects
+          02. Process
         </Link>
       </motion.li>
       <motion.li
@@ -46,14 +46,14 @@ const NavLinks = (props) => {
         transition={{ delay: 0.3 }}
       >
         <Link
-          to="writing"
+          to="questions"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-75}
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          Writing
+          03. Questions
         </Link>
       </motion.li>
       <motion.li
@@ -69,7 +69,7 @@ const NavLinks = (props) => {
           duration={500}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          Contact
+          04. Contact
         </Link>
       </motion.li>
     </ul>

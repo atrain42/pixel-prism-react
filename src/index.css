@@ -13,24 +13,10 @@ body {
 :root {
   --green: #41b3a3;
   --green: #98ddd4c9;
+  --text-black: #404040;
   --max-width: 1170px;
   --fixed-width: 920px;
 }
-
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
-  z-index: 42;
-}
-
-/* .title-content {
-  background-color: rgb(65, 179, 163, 0.35);
-} */
 
 .section-title {
   /* padding-top: 50px; */
@@ -133,11 +119,11 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   .workflow {
     padding: 100px 100px;
   }
-}
+} */
 
 @media (max-width: 700px) {
   .home-section {
@@ -151,11 +137,11 @@ body {
   }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   .workflow {
     padding: 100px 50px;
   }
-}
+} */
 
 @media (max-width: 550px) {
   .singleIcon {

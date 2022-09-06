@@ -9,12 +9,12 @@ import product from "../../img/product.png";
 const data = [
   {
     title: "SEO",
-    info: "Good SEO means that Google will recommend your business when people search related content.",
+    info: "We can create you a site with efficient SEO. This means that Google will recommend your business when people search related content on the web.",
     icon: agile,
   },
   {
     title: "Marketing",
-    info: "To inform potential customers of the different aspects of your business and the different services that your business offers.",
+    info: "Inform your potential customers of the different aspects of your business and the different services that your business offers.",
     icon: app,
   },
   {
