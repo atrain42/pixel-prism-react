@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --green: #41b3a3;
   --green: #98ddd4c9;
