@@ -10,25 +10,25 @@ const alerts = [
   {
     id: 1,
     title: "Research",
-    info: "All of the websites that we create are custom and tailored to your needs and wants. When building your site, we are in constant contact with you so just let us know what info you want on your site and we will include it!",
+    info: "First, we will start by researching similar businesses and taking note how their websites are structured. This gives us a good starting point in understanding how to structure your website.",
     img: img1,
   },
   {
     id: 2,
     title: "Design",
-    info: "We expect your website to contain private information like addresses, dates, etc. This is why all of the sites we create are password protected. Simply inform your guests of the password, and they will be able to gain access to your site.",
+    info: "In the design phase, I will begin building the user interface of your website. Through the utilization of white space and subtle animations, together, we will leave a lasting impression on potential customers.",
     img: img2,
   },
   {
     id: 3,
     title: "Develop",
-    info: "Take a look at some example websites that we have built to get an idea of the different routes we can take when creating your site. Also, you have the chance to see a completed site with password protection and a functional contact form.",
+    info: "During the develop phase, I will maximize the performance of your site. I will make sure your site is has a fast load time, is accessible on all device types, and is free of potential bugs.",
     img: img3,
   },
   {
     id: 4,
     title: "Deploy",
-    info: "Take a look at some example websites that we have built to get an idea of the different routes we can take when creating your site. Also, you have the chance to see a completed site with password protection and a functional contact form.",
+    info: "After any issues with the site are resolved, it is time to deploy your site! I will deploy your site to the Netlify servers and potential customers now have access to your site.",
     img: img4,
   },
 ];
