@@ -1,0 +1,105 @@
+.header {
+  /* background-color: #f5f5f5; */
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../../img/waves.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header img {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  height: 100px;
+  width: 100px;
+}
+
+.headerText {
+  padding-top: 250px;
+  padding-left: 75px;
+}
+
+.headerText h1 {
+  color: #fff;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 10px;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.headerText h2 {
+  color: #aabacc;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+}
+
+.linebreak {
+  width: 300px;
+  height: 1px;
+  border-bottom: 1px solid #69b8fa;
+  margin-bottom: 10px;
+}
+
+@keyframes scaler {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(1.2);
+  }
+
+  66% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1150px) {
+  .headerText {
+    padding-left: 50px;
+  }
+
+  .header img {
+    right: 20%;
+  }
+}
+
+@media (max-width: 875px) {
+  .headerText {
+    padding-top: 325px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header img {
+    top: 15%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-height: 720px) {
+  .headerText {
+    padding-top: 290px;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerText h1 {
+    font-size: 44px;
+  }
+
+  .headerText h2 {
+    font-size: 20px;
+  }
+}

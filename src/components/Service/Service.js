@@ -1,31 +1,25 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import classes from "./Service.module.css";
-import agile from "../../img/agile.png";
 import app from "../../img/app.png";
 import cloud from "../../img/cloud.png";
 import product from "../../img/product.png";
 
 const data = [
   {
-    title: "SEO",
-    info: "We can create you a site with efficient SEO. This means that Google will recommend your business when people search related content on the web.",
-    icon: agile,
+    title: "Frontend Development",
+    info: "Together, we can bridge the gap between art and technology.",
+    icon: cloud,
   },
   {
-    title: "Marketing",
-    info: "Inform your potential customers of the different aspects of your business and the different services that your business offers.",
+    title: "Web Apps & Corporate Sites",
+    info: "I will promote your products or services with unique user experiences and impactful designs.",
     icon: app,
   },
   {
-    title: "Promotion",
-    info: "Alert customers of any promotions that are occuring within your business. This may propel potential customers to act quicky.",
+    title: "Personal Branding",
+    info: "Take your content creating to the next level with interactive portfolio or blog applications.",
     icon: product,
-  },
-  {
-    title: "Support",
-    info: "We can provide support to potential customers who have questions or need to get in contact with the business owner.",
-    icon: cloud,
   },
 ];
 
@@ -46,9 +40,11 @@ const Service = () => {
         >
           <div className={classes.serviceTitle}>
             <img src={el.icon} alt={el.title} className={classes.icon}></img>
-            <h1>{el.title}</h1>
+            <div className={classes.textText}>
+              <h1>{el.title}</h1>
+              <p>{el.info}</p>
+            </div>
           </div>
-          <p>{el.info}</p>
         </div>
       ))}
     </section>

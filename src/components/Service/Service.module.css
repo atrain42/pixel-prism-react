@@ -1,7 +1,7 @@
 .service {
   padding: 100px 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 550px));
+  grid-template-columns: repeat(3, minmax(140px, 475px));
   justify-content: center;
   /* gap: 20px 0px; */
   overflow: hidden;
@@ -9,8 +9,16 @@
 
 .serviceTitle {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
+}
+
+.serviceTitle img {
+  margin-bottom: 10px;
+  height: 75px;
+  width: 75px;
 }
 
 .icon {
@@ -24,22 +32,41 @@
   font-family: "Lora", sans-serif;
 }
 
-.singleService h1 {
-  font-family: "Inter", sans-serif;
+.serviceTitle h1 {
+  font-family: "Lora", sans-serif;
+  text-align: center;
   font-weight: bolder;
   font-size: 27px;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.singleService:nth-child(1) {
-  border-right: 0.25px solid rgb(200, 200, 200);
-  border-bottom: 0.25px solid rgb(200, 200, 200);
+.serviceTitle p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
 }
 
-.singleService:nth-child(4) {
-  border-left: 0.25px solid rgb(200, 200, 200);
-  border-top: 0.25px solid rgb(200, 200, 200);
-}
+@media (max-width: 1150px) {
+  .serviceTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
+  .serviceTitle p {
+    text-align: left;
+    font-size: 19px;
+  }
+  .serviceTitle h1 {
+    text-align: left;
+  }
+
+  .service {
+    grid-template-columns: repeat(1, minmax(140px, 700px));
+  }
+}
 @media (max-width: 775px) {
   .service {
     grid-template-columns: repeat(1, minmax(140px, 550px));
@@ -49,24 +76,29 @@
   .singleService {
     border-bottom: 0.25px solid rgb(200, 200, 200);
   }
-
-  .singleService:nth-child(1) {
-    border-right: none;
-  }
-  .singleService:nth-child(4) {
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-  }
 }
 
 @media (max-width: 550px) {
   .service {
-    padding-left: 15px;
-    padding-right: 15px;
+    grid-template-columns: repeat(1, minmax(75px, 100%));
+    padding: 50px 25px;
   }
 
   .singleService {
     padding: 50px 0px;
+    width: 100%;
+  }
+
+  .serviceTitle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .serviceTitle h1 {
+    font-family: "Lora", sans-serif;
+
+    white-space: nowrap;
   }
 }
