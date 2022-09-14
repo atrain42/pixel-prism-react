@@ -1,6 +1,5 @@
 import React from "react";
-import { Header, Workflow, FooterTest, About } from "../layout";
-import Service from "../components/Service/Service";
+import { Header, Workflow, Footer, About } from "../layout";
 import SingleAlert from "../components/alert/SingleAlert";
 import Questions from "../components/accordion/Questions";
 
@@ -18,7 +17,7 @@ const Home = (props) => {
       </section>
       <Workflow />
       <Questions />
-      <FooterTest />
+      <Footer />
     </React.Fragment>
   );
 };
